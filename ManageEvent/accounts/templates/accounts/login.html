@@ -6,9 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Connexion ou enregistrement</h1>
-
-    <a href="{% url 'accounts:login_user' %}">Login</a> <br>
-    <a href="{% url 'accounts:register_user' %}">Register</a>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Login</button>
+    </form>
 </body>
 </html>
