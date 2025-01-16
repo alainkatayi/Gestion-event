@@ -31,7 +31,7 @@ def create_event(request):
             event.organiser =request.user
             event.save()
 
-            return redirect('events:dashboard')
+            return redirect('events:dashboarAdmin')
     else:
         form = EventForm()
     return render(request, 'events/create_event.html', {'form': form})
