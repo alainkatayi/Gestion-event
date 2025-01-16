@@ -10,9 +10,11 @@
 
     {% for event in events %}
         <p>
-        {{ event.name }}
-        {{ event.organiser }}
-
+            <a href="{% url 'events:reservationFormulaire' event.id %}">
+           
+                {{ event.name }}
+         
+        </a>
         </p>
     {% endfor %}
 </body>

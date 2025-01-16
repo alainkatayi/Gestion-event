@@ -6,9 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLLO</h1>
-    <a href="{% url 'events:dashboarUser' %}">Voir les events disponibles</a> <br>
-    <a href="{% url 'accounts:index' %}">Creer un evenement</a>
-
+    <h1>
+        {{ event.name }}
+    </h1>
+    <p>RESERVER</p>
+    <a href="{% url 'events:reservationFormulaire' %}">COMMENCER LA reservation</a>
 </body>
 </html>

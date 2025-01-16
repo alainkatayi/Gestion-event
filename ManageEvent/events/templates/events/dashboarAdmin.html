@@ -13,7 +13,7 @@
     <div>
 
         <h1>Vos evenement</h1>
-        {% for event in even %}
+        {% for event in events %}
         <p>
             <a href="{% url 'events:show_event' event.id %}"> 
                 {{ event.name }}
@@ -24,7 +24,12 @@
 
     <div>
         <h1>Les reservations</h1>
-        <a href="{% url 'events:reservations' %}">Listes reservation</a>
+        <a href="{% url 'events:reservationsList' %}">Listes reservation</a>
+        {% for reserv in reservation %}
+        <p>
+                {{ reserv.name_subscriber }}
+            </a>
+        {% endfor %}
     </div>
 
 </body>

@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLLO</h1>
-    <a href="{% url 'events:dashboarUser' %}">Voir les events disponibles</a> <br>
-    <a href="{% url 'accounts:index' %}">Creer un evenement</a>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
 
+        <button type="submit">RESERVER</button>
+    </form>
 </body>
 </html>
