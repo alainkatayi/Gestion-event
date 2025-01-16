@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>success</h1>
-    <a href="{% url 'events:dashboard' %}">Continuez</a>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button  type="submit">CREER</button>
+    </form>
 </body>
 </html>

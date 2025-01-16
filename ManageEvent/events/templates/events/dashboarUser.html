@@ -6,7 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>success</h1>
-    <a href="{% url 'events:dashboard' %}">Continuez</a>
+    <h1>Les évenement disponilbles sont visibles ici</h1>
+
+    {% for event in events %}
+        <p>
+        {{ event.name }}
+        {{ event.organiser }}
+
+        </p>
+    {% endfor %}
 </body>
 </html>

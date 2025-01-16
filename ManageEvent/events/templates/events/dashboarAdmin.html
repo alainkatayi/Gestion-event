@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tableau de bord</h1>
+    <a href="{% url 'events:create_event' %}">Creer un evenement</a>
+
+
+    <div>
+
+        <h1>Vos evenement</h1>
+        {% for event in even %}
+        <p>
+            <a href="{% url 'events:show_event' event.id %}"> 
+                {{ event.name }}
+            </a>
+        </p>
+    {% endfor %}
+    </div>
+
+    <div>
+        <h1>Les reservations</h1>
+        <a href="{% url 'events:reservations' %}">Listes reservation</a>
+    </div>
+
+</body>
+</html>
