@@ -6,15 +6,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'accounts/css/index.css' %}">
-    <link rel="stylesheet" href="{% static 'accounts/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'accounts/bootstrap/css/bootstrap.min.css' %}">
 
     <title>Document</title>
 </head>
 <body>
-    <h1>Connexion ou enregistrement</h1>
 
-    <a href="{% url 'accounts:login_user' %}">Login</a> <br>
-    <a href="{% url 'accounts:register_user' %}">Register</a>
+    <div class="principal">
+        <div class="custom-container2">
+            <div>
+            <h1 class="logo">Evento</h1>
+            <p>by alain katayi</p>
+            </div>
+            <div class="cont-2">
+                <p>
+                    La plateforme ideal pour la gestion de vos evenements <br> Libre et gratuit, fait a votre image, pour votre image. <br> <br>
+                    Gerez vos evenements en toute simplicite et en toute securite.
+                </p>
+            </div>
+        </div>
+    
+        <div class="background">
+            <div class="cont-1">    
+                <div class="container custom-container">
+                    <a class="login" href="{% url 'accounts:login_user' %}">Log in</a> <br>
+                    <a class="register" href="{% url 'accounts:register_user' %}">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

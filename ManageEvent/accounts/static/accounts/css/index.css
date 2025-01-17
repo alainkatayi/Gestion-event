@@ -1,4 +1,64 @@
-body {
-    background-color: white;
+
+
+.principal{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #f8f9fc 0%, #e4eaff 50%, #eef2ff 100%);
+
+
 }
+
+.custom-container2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.cont-2{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+
+.logo{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+
+.login{
+    text-decoration: none;
+    background-color: #212529;
+    border-radius: 20px;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    
+}
+
+.register {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border-color: #212529;
+    border-style: solid;
+    border-width: 1px;
+    border-radius:20px;
+    padding: 30px;
+    color: black;
+    font-size: 20px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.custom-container{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.custom-container a{
+    margin: 50px;
+}
+
 
