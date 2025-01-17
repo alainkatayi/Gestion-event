@@ -11,6 +11,7 @@ class Event(models.Model):
     location = models.CharField(max_length = 100)
     start_date = models.DateTimeField()
     end_date = models.DateTimeField()
+    price = models.DecimalField(max_digits = 10, decimal_places = 2, default = 0)
     organiser = models.ForeignKey(CustomUser, on_delete = models.CASCADE, related_name = "events", null = True)
 
     def __str__(self):
