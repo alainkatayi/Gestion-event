@@ -1,3 +1,21 @@
 body {
     background-color: white;
 }
+
+.div-1 a{
+    text-decoration: none;
+    
+}
+
+.div-1{
+    justify-content: center;
+    margin: 200px;
+    padding: 20px;
+}
+
+.links{
+    text-align: center;
+    margin-top: 50px;
+}
+
+

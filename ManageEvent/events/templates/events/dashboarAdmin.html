@@ -10,30 +10,41 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Tableau de bord</h1>
-    <a href="{% url 'events:create_event' %}">Creer un evenement</a>
-
-
-    <div>
-
-        <h1>Vos evenement</h1>
-        {% for event in events %}
-        <p>
-            <a href="{% url 'events:show_event' event.id %}"> 
-                {{ event.name }}
-            </a>
+    <div class="div-1">
+        <div>
+            <h1 class="tableau">Dashboard</h1>
+        <p class="create_event">
+            <a href="{% url 'events:create_event' %}">Create Event </a>
         </p>
-    {% endfor %}
-    </div>
-
-    <div>
-        <h1>Les reservations</h1>
-        <a href="{% url 'events:reservationsList' %}">Listes reservation</a>
-        {% for reserv in reservation %}
-        <p>
-                {{ reserv.name_subscriber }}
-            </a>
-        {% endfor %}
+    
+        <div class="div-2">
+            <div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Delectus odio distinctio fugiat hic, quam, <br> suscipit nam quis quaerat corrupti est quisquam, <br> at numquam ipsam commodi pariatur exercitationem <br> vero ullam voluptatum.</p>
+                </div>
+                <div>
+                    <h3>Vos evenement</h3>
+                    {% for event in events %}
+                    <p>
+                        <a href="{% url 'events:show_event' event.id %}"> 
+                            {{ event.name }}
+                        </a>
+                    </p>
+                {% endfor %}
+                </div>
+            
+                <div>
+                    <h3>Les reservations</h3>
+                    <a href="{% url 'events:reservationsList' %}">Listes reservation</a>
+                    {% for reserv in reservation %}
+                    <p>
+                            {{ reserv.name_subscriber }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 
 </body>
