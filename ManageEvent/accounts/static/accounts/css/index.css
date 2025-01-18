@@ -1,31 +1,5 @@
 
 
-.principal{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(180deg, #f8f9fc 0%, #e4eaff 50%, #eef2ff 100%);
-
-
-}
-
-.custom-container2{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 150px;
-}
-
-.cont-2{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    padding: 50px;
-}
-
-.logo{
-    font-size: 100px;
-    font-weight: bold;
-}
-
 
 .login{
     text-decoration: none;

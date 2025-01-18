@@ -1,0 +1,52 @@
+
+body{
+    background-color: white;
+}
+
+.custom-container2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.cont-2{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+
+.logo{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+
+.links-choice{
+    display: flex;
+    justify-content: center;
+}
+
+.links-choice a{
+    text-decoration: none;
+    margin: 80px;
+}
+
+.links-create{
+    color: white;
+    padding: 20px;
+    background-color: rgb(1, 48, 48);
+    border-radius: 10px;
+}
+
+.links-view{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(1, 48, 48);
+    border-width: 2px;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 10px;
+}

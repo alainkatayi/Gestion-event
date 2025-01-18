@@ -10,11 +10,32 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Register</h1>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit">Register</button>
-    </form>
+    <div class="logo-form">
+
+        <div>
+            <h1 class="logo">Evento</h1>
+            <p>by alain katayi</p>
+        </div>
+
+        <div class="custom-form">
+            <h1>Register</h1>
+            <form method="POST">
+                {% csrf_token %}
+        
+                <input type="text" name="username" placeholder="Username" id="id_username" required> <br>
+        
+                <input type="email" name="email" placeholder="email" id="id_email" required> <br>
+        
+                <input type="text" name="phone_number" placeholder="Phone" id="id_phone" required> <br>
+        
+                <input type="password" name="password1" placeholder="Password" id="id_password1" required> <br>
+        
+                <input type="password" name="password2" placeholder="Confirme password" id="id_password2" required> <br>
+        
+                <button class="submit" type="submit">Register</button>
+        
+            </form>
+        </div>
+    </div>
 </body>
 </html>

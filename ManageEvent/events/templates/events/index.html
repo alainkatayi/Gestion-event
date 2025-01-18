@@ -5,14 +5,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'events/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'events/css/index2.css' %}">
     <link rel="stylesheet" href="{% static 'events/bootstrap/css/bootstrap.min.css' %}">
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLLO</h1>
-    <a href="{% url 'events:dashboarUser' %}">Voir les events disponibles</a> <br>
-    <a href="{% url 'accounts:index' %}">Creer un evenement</a>
+
+    <div class="custom-container2">
+        <div>
+        <h1 class="logo">Evento</h1>
+        <p>by alain katayi</p>
+        </div>
+        <div class="cont-2">
+            <p>
+                La plateforme ideal pour la gestion de vos evenements <br> Libre et gratuit, fait a votre image, pour votre image. <br> <br>
+                Gerez vos evenements en toute simplicite et en toute securite.
+            </p>
+        </div>
+    </div>
+
+    <div class=" container links-choice">
+
+        <a class="links-create" href="{% url 'accounts:login_user' %}">Create event</a>
+        <a class="links-view" href="{% url 'events:dashboarUser' %}">View the events available</a> <br>
+
+    </div>
 
 </body>
 </html>

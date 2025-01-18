@@ -9,11 +9,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>LOGIN</h1>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit">Login</button>
-    </form>
+
+
+    <div class="logo-form">
+        <div>
+            <h1 class="logo">Evento</h1>
+            <p>by alain katayi</p>
+        </div>
+
+        <div class="custom-form">
+            <h1 class="h4">LOGIN</h1>
+
+            <form method="POST">
+                {% csrf_token %}
+
+                {% for message in messages %}
+
+                    <p> {{ message }} </p>
+                
+                {% endfor %}
+
+                <input type="text" name="username" placeholder="Username" id="id_username" required><br>
+                <input type="password" name="password" placeholder="Password" id="id_password" required><br>
+                <button class="submit" type="submit">Login</button>
+            </form>
+    
+            <p class="or">or</p>
+    
+            <p class="register">
+                <a href="{% url 'accounts:register_user' %}">Register</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
