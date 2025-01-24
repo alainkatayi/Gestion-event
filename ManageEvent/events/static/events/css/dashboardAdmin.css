@@ -1,13 +1,19 @@
+
 .div-1{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(218, 212, 212, 0.507);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     margin: 20px;
+    padding: 0px;
+}
+
+.nav-links{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
     padding: 20px;
 }
 
 .div-1 a{
     text-decoration:none;
-
 }
 
 .tableau{
@@ -15,7 +21,7 @@
 }
 
 .create_event{
-    text-align: right;
+    margin-left: 920px;
 }
 
 .create_event a{
@@ -23,6 +29,17 @@
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 10px;
-
 }
 
+.div-2{
+    display: flex;
+}
+
+.div-3{
+    display: flex;
+}
+
+
+.dash{
+    margin-left: 30px;
+}
