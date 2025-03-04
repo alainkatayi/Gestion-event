@@ -1,13 +1,18 @@
 
 .div-1{
-    background-color: rgba(218, 212, 212, 0.507);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 0px;
 }
 
+.logo{
+    font-weight: bold;
+}
+
 .nav-links{
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     height: 100%;
     padding: 20px;
 }
@@ -33,6 +38,7 @@
 
 .div-2{
     display: flex;
+    margin-top: 40px;
 }
 
 .div-3{
@@ -42,4 +48,115 @@
 
 .dash{
     margin-left: 30px;
+    padding: 20px;
+}
+
+.evenement{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.your{
+    font-size: 30px;
+}
+
+.number-event{
+    font-size:30px;
+}
+
+.number-event a{
+    color: red;
+}
+.reservations{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.reser{
+    font-size: 30px;
+}
+
+.number-reservations{
+    font-size:30px;
+
+}
+.number-reservations a{
+    color: red;
+}
+
+.div-4{
+    display: flex;
+    margin-left: 50px;
+
+}
+
+
+.location{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.rate{
+    font-size: 30px;
+}
+
+.number-rate{
+    font-size: 30px;
+}
+
+.number-rate a{
+    color: red;
+}
+
+.Popular{
+    background-color: white;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+
+.div-4 div{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.Payement{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.Calendar{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.div-5{
+    display: flex;
+    margin-top: 20px;
 }
